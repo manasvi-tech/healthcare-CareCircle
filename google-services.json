@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302334226464",
+    "project_id": "otpverification-f45f5",
+    "storage_bucket": "otpverification-f45f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302334226464:android:646a7691ad9184922f4c45",
+        "android_client_info": {
+          "package_name": "com.example.healthcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0T_RaNWwDUeiL5Q-4SBngiQe64NR_hmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
