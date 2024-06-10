@@ -79,16 +79,17 @@ public class VerifyOTPActivity extends AppCompatActivity {
                     PhoneAuthCredential phoneAuthCredential  = PhoneAuthProvider.getCredential(
                             verificationId,
                             code
-                    );
-                    FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential)
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    );   //This creates a PhoneAuthCredential object using the verification ID (verificationId) and the OTP entered by the user (code).
+                    FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential)  //FirebaseAuth.getInstance().signInWithCredential(phoneAuthCredential): This method attempts to sign in the user using the provided credentials (OTP).
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {   //This adds a listener to handle the completion of the sign-in process asynchronously.
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     progressBar.setVisibility(View.GONE);
                                     buttonVerify.setVisibility(View.VISIBLE);
-                                    if(task.isSuccessful()){
+                                    if(task.isSuccessful()){   //This condition checks if the sign-in task was successful.
                                         Intent it = new Intent(getApplicationContext(),LoginActivity.class);
-                                        it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);  //FLAG_ACTIVITY_NEW_TASK: This flag indicates that the activity should be launched into a new task. If this flag is not set, the activity will be launched into the task of the activity that started it.
+                                        //FLAG_ACTIVITY_CLEAR_TASK: This flag clears the task that the activity is being launched into. All activities on the stack above this one will be finished and removed from the stack.
                                         startActivity(it);
                                     } else{
                                         Toast.makeText(getApplicationContext(),"The verification code entered is not correct",Toast.LENGTH_SHORT).show();

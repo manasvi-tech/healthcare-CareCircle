@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please fill the required fields", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(db.login(userName,Passwrod)==1){
+                    if(db.login(userName,Passwrod)==1){ // int type function 1 if a result is found 0 if not
                         Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
 
                         //saving login detail in local memory. if we want to display the username in home page or somewhere

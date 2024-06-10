@@ -41,12 +41,12 @@ public class SendOTPActivity extends AppCompatActivity {
 
                 PhoneAuthProvider.getInstance().verifyPhoneNumber(
                         "+91" + inputMobile.getText().toString(),
-                        60,
-                        TimeUnit.SECONDS,
+                        60, //time out duration
+                        TimeUnit.SECONDS, // unit of timed out duration
                         SendOTPActivity.this,
                         new PhoneAuthProvider.OnVerificationStateChangedCallbacks(){
                             @Override
-                            public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+                            public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {   // This method is called when the verification is successfully completed
                                 progressBar.setVisibility(View.GONE);
                                 buttonGetOTP.setVisibility(View.VISIBLE);
                             }
@@ -66,7 +66,6 @@ public class SendOTPActivity extends AppCompatActivity {
                                 Intent it = new Intent(getApplicationContext(), VerifyOTPActivity.class);
                                 it.putExtra("mobile", inputMobile.getText().toString());
                                 it.putExtra("verificationId", verificationId);
-                                Toast.makeText(getApplicationContext(), "Verification id: " + verificationId + "mobile no. " + inputMobile.getText().toString(), Toast.LENGTH_SHORT).show();
                                 startActivity(it);
                             }
                         }

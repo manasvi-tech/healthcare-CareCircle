@@ -17,44 +17,44 @@ import java.util.HashMap;
 
 public class DoctorDetailActivity extends AppCompatActivity {
     private String[][] doctor_details1 = {
-            {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-            {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
-            {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
-            {"Doctor Name : Deepak DeshMukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No: 989890000", "800"},
-            {"Doctor Name : Ashok Pandey", "Hospital Address : Katraj", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
+            {"Doctor Name : Ajit Saste", "Hospital Address : Gurgaon", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+            {"Doctor Name : Prasad Pawar", "Hospital Address : Delhi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
+            {"Doctor Name : Swapnil Kale", "Hospital Address : Bhiwadi", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
+            {"Doctor Name : Deepak DeshMukh", "Hospital Address : Sector- 47, Gurgaon", "Exp : 6yrs", "Mobile No: 989890000", "800"},
+            {"Doctor Name : Ashok Pandey", "Hospital Address : Kapriwas", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
     };
 
 
     private String[][] doctor_details2 =
             {
-                    {"Doctor Name : Neelam Patil", "Hospital Address : Pimpri", "Exp : 5yrs”, Mobile No:9898989898", "600"},
-                    {"Doctor Name : Swati Pawar", "Hospital Address : Nigdi", "Exp : 15yrs”, Mobile No:7898989898", "900"},
-                    {"Doctor Name : Neeraja Kale", "Hospital Address : Pune", "Exp : 8yrs”, Mobile No:8898989898", "300"},
-                    {"Doctor Name : Mayuri DeshMukh", "Hospital Address : Chinchwad", "Exp : 6yrs”, Mobile No:989890000", "800"},
-                    {"Doctor Name : Minakshi Pandey", "Hospital Address : Katraj", "Exp : 7yrs”, Mobile No:7798989898", "8 00"},
+                    {"Doctor Name : Neelam Patil", "Hospital Address : Saket, Delhi", "Exp : 5yrs”, Mobile No:9898989898", "600"},
+                    {"Doctor Name : Swati Pawar", "Hospital Address : Gururgam", "Exp : 15yrs”, Mobile No:7898989898", "900"},
+                    {"Doctor Name : Neeraja Kale", "Hospital Address : Kapriwas", "Exp : 8yrs”, Mobile No:8898989898", "300"},
+                    {"Doctor Name : Mayuri DeshMukh", "Hospital Address : Chandni Chowk", "Exp : 6yrs”, Mobile No:989890000", "800"},
+                    {"Doctor Name : Minakshi Pandey", "Hospital Address : ISBT Delhi", "Exp : 7yrs”, Mobile No:7798989898", "8 00"},
             };
 
     private String[][] doctor_details3 = {
             {"Doctor Name : Seema Patil", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-            {"Doctor Name : Pankaj Parab", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
-            {"Doctor Name : Monish Jain", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
-            {"Doctor Name : Visha DeshMukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No: 989890000", "800"},
-            {"Doctor Name : Shrikant Pandey", "Hospital Address : Katraj", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
+            {"Doctor Name : Pankaj Parab", "Hospital Address : Kapriwas", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
+            {"Doctor Name : Monish Jain", "Hospital Address : Bilaspur", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
+            {"Doctor Name : Visha DeshMukh", "Hospital Address : Dilli Haat, Delhi", "Exp : 6yrs", "Mobile No: 989890000", "800"},
+            {"Doctor Name : Shrikant Pandey", "Hospital Address : Iffco Metro Station", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
     };
 
 
     private String[][] doctor_details4 = {
-            {"Doctor Name : Nilesh Borate", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-            {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
+            {"Doctor Name : Nilesh Borate", "Hospital Address : Huda City Center", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+            {"Doctor Name : Prasad Pawar", "Hospital Address : Delhi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
             {"Doctor Name : Swapan Lele", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
-            {"Doctor Name : Deepak Kumar", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No: 9898900000", "800"},
-            {"Doctor Name : Ashok Singh", "Hospital Address : Katraj", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
+            {"Doctor Name : Deepak Kumar", "Hospital Address : Rohini, Delhi", "Exp : 6yrs", "Mobile No: 9898900000", "800"},
+            {"Doctor Name : Ashok Singh", "Hospital Address : Pritampura", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
     };
     private String[][] doctor_details5 = {
-            {"Doctor Name : Anmol Gawade", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-            {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
-            {"Doctor Name : Nilesh Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
-            {"Doctor Name : Deepak DeshPande", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No: 989890000", "800"},
+            {"Doctor Name : Anmol Gawade", "Hospital Address : Model Town, Gurugram", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+            {"Doctor Name : Prasad Pawar", "Hospital Address : Bhiwadi", "Exp : 15yrs", "Mobile No: 7898989898", "900"},
+            {"Doctor Name : Nilesh Kale", "Hospital Address : Gurugram", "Exp : 8yrs", "Mobile No: 8898989898", "300"},
+            {"Doctor Name : Deepak DeshPande", "Hospital Address : Bilaspur", "Exp : 6yrs", "Mobile No: 989890000", "800"},
             {"Doctor Name : Atul Pandey", "Hospital Address : Katraj", "Exp : 7yrs", "Mobile No: 7798989898", "800"}
     };
 

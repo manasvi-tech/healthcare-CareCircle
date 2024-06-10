@@ -36,7 +36,7 @@ public class Database extends SQLiteOpenHelper { //database connecivity for user
 
     }
     public void register(String username, String email, String password){
-        ContentValues cv = new ContentValues();
+        ContentValues cv = new ContentValues(); //ContentValues objects are used to insert new rows into database tables
         cv.put("username",username); //first parameter is column name and second is variable name
         cv.put("email",email);
         cv.put("password",password);
